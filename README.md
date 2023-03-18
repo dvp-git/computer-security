@@ -1,19 +1,40 @@
 # computer-security
 Repository for computer security programming assignments
 
-Libraries Used:
+Library Used:
 ---------------
-hashlib - common interface for different secure hash and message digest algorithms
+NAME
+    cryptography
 
-SHA and MD5 algorithms
+DESCRIPTION
+    # This file is dual licensed under the terms of the Apache License, Version
+    # 2.0, and the BSD License. See the LICENSE file in the root of this repository
+    # for complete details.
 
-zlib - adler32 and crc32 hash functions
+PACKAGE CONTENTS
+    __about__
+    exceptions
+    fernet
+    hazmat (package)
+    utils
+    x509 (package)
 
-- Simple to use interface. Example: sha256() creates a SHA-256 hash object
-- Input type : bytes-like object
+DATA
+    __all__ = ['__title__', '__summary__', '__uri__', '__version__', '__au...
+    __copyright__ = 'Copyright 2013-2019 The cryptography developers'
+    __email__ = 'cryptography-dev@python.org'
+    __license__ = 'BSD or Apache License, Version 2.0'
+    __summary__ = 'cryptography is a package which provides cryptographic ...
+    __title__ = 'cryptography'
+    __uri__ = 'https://github.com/pyca/cryptography'
 
-For larger than 2074 bytes use Python's GIL library ( multi threading performance boost)
+VERSION
+    2.8
 
-NOTE: Feeding of string objects is not supported to update() method. Hashes work on bytes, not characters.
+AUTHOR
+    The cryptography developers
 
-sha
+FILE
+    /usr/lib/python3/dist-packages/cryptography/__init__.py
+
+

@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Other files
+package_1
+Free_Test_Data_10.5MB_PDF.pdf

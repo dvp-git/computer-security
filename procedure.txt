@@ -1,0 +1,6 @@
+dvasprab@dvasprab-VirtualBox:~/Computer-Security$ tr -dc A-Za-z0-9 </dev/urandom | head -c 10485760 > file_2.txt
+dvasprab@dvasprab-VirtualBox:~/Computer-Security$  cd /home/dvasprab/Computer-Security ; /usr/bin/env /bin/python3 /home/dvasprab/.vscode/extensions/ms-python.python-2023.4.1/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 47105 -- /home/dvasprab/Computer-Security/program.py 
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (1.25.8) or chardet (5.1.0) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
