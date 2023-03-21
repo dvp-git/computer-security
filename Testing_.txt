@@ -1,0 +1,140 @@
+-----------------------AES CTR encryption/decryption-----------------------
+--------------------
+
+
+Original message slice:  b'What is Lo'
+The received message is : b'What is Lo'
+
+SUCCESS
+AES-CTR 128-bit key with 1KB file :
+ Filename: package_1:1KB , KeyGen Time :1578 ns ,Enc Time: 46592 ns, Dec Time: 11276 ns , Encryption speed per byte:46.592 ns, Decryption speed per byte:11.276 ns
+--------------------
+
+
+Original message slice:  b'FdciWQzrhW'
+The received message is : b'FdciWQzrhW'
+
+SUCCESS
+AES-CTR 128-bit key with 10MB file :
+ Filename: package_2:10MB , KeyGen Time :1880 ns ,Enc Time: 17733947 ns, Dec Time: 14295841 ns , Encryption speed per byte:16.909442579808537 ns, Decryption speed per byte:13.631184446393837 ns
+--------------------
+
+
+Original message slice:  b'What is Lo'
+The received message is : b'What is Lo'
+
+SUCCESS
+AES-CTR 256-bit key with 1KB file :
+ Filename: package_1:1KB , KeyGen Time :3607 ns ,Enc Time: 14486 ns, Dec Time: 6283 ns , Encryption speed per byte:14.486 ns, Decryption speed per byte:6.283 ns
+--------------------
+
+
+Original message slice:  b'FdciWQzrhW'
+The received message is : b'FdciWQzrhW'
+
+SUCCESS
+AES-CTR 256-bit key with 10MB file :
+ Filename: package_2:10MB , KeyGen Time :5050 ns ,Enc Time: 19031808 ns, Dec Time: 13552203 ns , Encryption speed per byte:18.14696212670201 ns, Decryption speed per byte:12.922120408863801 ns
+
+-----------------------AES CBC encryption/decryption-----------------------
+--------------------
+
+
+Original message slice:  b'What is Lo'
+The message was  b'What is Lo'
+
+
+SUCCESS
+AES-CBC 128-bit key with 1KB file :
+ Filename: package_1:1KB KeyGen Time :3741 ns ,Enc Time: 57351 ns, Dec Time: 9100 ns , Encryption speed per byte:57.351 ns, Decryption speed per byte:9.1 ns
+--------------------
+
+
+Original message slice:  b'FdciWQzrhW'
+The message was  b'FdciWQzrhW'
+
+
+SUCCESS
+AES-CBC 128-bit key with 10MB file :
+ Filename: package_2:10MB KeyGen Time :3021 ns ,Enc Time: 27319017 ns, Dec Time: 14968018 ns , Encryption speed per byte:26.048873908234487 ns, Decryption speed per byte:14.272109920286814 ns
+--------------------
+
+
+Original message slice:  b'What is Lo'
+The message was  b'What is Lo'
+
+
+SUCCESS
+AES-CBC 256-bit key 1KB file :
+ Filename: package_1:1KB KeyGen Time :3163 ns ,Enc Time: 20826 ns, Dec Time: 5948 ns , Encryption speed per byte:20.826 ns, Decryption speed per byte:5.948 ns
+--------------------
+
+
+Original message slice:  b'FdciWQzrhW'
+The message was  b'FdciWQzrhW'
+
+
+SUCCESS
+AES-CBC 256-bit key with 10MB file :
+ Filename: package_2:10MB KeyGen Time :2923 ns ,Enc Time: 29290807 ns, Dec Time: 15810140 ns , Encryption speed per byte:27.928989473282734 ns, Decryption speed per byte:15.075079141080895 ns
+
+-----------------------HASHING-----------------------
+
+SHA-256 with 1KB file :
+ Hashing function : SHA-256 Filename: package_1:1KB Hash Time :14112 ns , Per-Byte-Hash : 14.112 ns
+
+SHA-256 with 10MB file :
+ Hashing function : SHA-256 Filename: package_2:10MB Hash Time :42561503 ns , Per-Byte-Hash : 40.58269098745185 ns
+
+SHA-512 with 1KB file :
+ Hashing function : SHA-512 Filename: package_1:1KB Hash Time :21345 ns , Per-Byte-Hash : 21.345 ns
+
+SHA-512 with 10MB file :
+ Hashing function : SHA-512 Filename: package_2:10MB Hash Time :27282064 ns , Per-Byte-Hash : 26.013638964109997 ns
+
+SHA3-256 with 1KB file :
+ Hashing function : SHA-3-256 Filename: package_1:1KB Hash Time :24431 ns , Per-Byte-Hash : 24.431 ns
+
+SHA3-256 with 10MB file :
+ Hashing function : SHA-3-256 Filename: package_2:10MB Hash Time :31364992 ns , Per-Byte-Hash : 29.906739387467105 ns
+
+-----------------------RSA encryption/decryption-----------------------
+
+
+SUCCESS
+2048 bit key with 1KB file : 
+ Filename: package_1:1KB KeyGen Time :717613340 ns,Enc Time: 2758727 ns, Dec Time: 9450266 ns ,Encryption speed per byte:2758.727ns, Decryption speed per byte:9450.266ns
+
+
+SUCCESS
+2048 bit key with 1MB file : 
+ Filename: file_rsa:1MB KeyGen Time :692182359 ns,Enc Time: 2424410205 ns, Dec Time: 8711464295 ns ,Encryption speed per byte:2312.0977449417114ns, Decryption speed per byte:8307.89975643158ns
+
+
+SUCCESS
+3072 bit key with 1KB file : 
+ Filename: package_1:1KB KeyGen Time :1352618071 ns,Enc Time: 4016438 ns, Dec Time: 20802173 ns ,Encryption speed per byte:4016.438ns, Decryption speed per byte:20802.173ns
+
+
+SUCCESS
+3072 bit key with 1MB file : 
+ Filename: file_rsa:1MB KeyGen Time :381192640 ns,Enc Time: 3699792001 ns, Dec Time: 18761770997 ns ,Encryption speed per byte:3528.396607398987ns, Decryption speed per byte:17892.619130134583ns
+
+-----------------------DSA-----------------------
+
+
+The message is authentic
+2048 bit key with 1KB file : Filename: package_1:1KB  , Keysize:2048 bits, KeyGen Time :7627462382 ns, Sign Time: 450436 ns, Verify Time: 602195 ns, Per Byte Sign time: 0.002220071219884734 ns, Per Byte Verify time: 0.0016605916688115976 ns
+
+
+The message is authentic
+2048 bit key with 10MB file : Filename: package_2:10MB  , Keysize:2048 bits, KeyGen Time :716311789 ns, Sign Time: 518191 ns, Verify Time: 608616 ns, Per Byte Sign time: 2.023886945161147 ns, Per Byte Verify time: 1.7231883486467658 ns
+
+
+The message is authentic
+3072 bit key with 1KB file : Filename: package_1:1KB  , Keysize:3072 bits, KeyGen Time :9184587191 ns, Sign Time: 981890 ns, Verify Time: 1610571 ns, Per Byte Sign time: 0.0010184440212243735 ns, Per Byte Verify time: 0.000620897805809244 ns
+
+
+The message is authentic
+3072 bit key with 10MB file : Filename: package_2:10MB  , Keysize:3072 bits, KeyGen Time :5348945078 ns, Sign Time: 918171 ns, Verify Time: 1472010 ns, Per Byte Sign time: 1.14222731931198 ns, Per Byte Verify time: 0.7124679859511824 ns
+(testing_2) dvasprab@dvasprab-VirtualBox:~/Desktop/testing_2$ 

@@ -1,0 +1,53 @@
+#! /usr/bin/python3
+
+
+from Cryptodome.Cipher import AES, PKCS1_OAEP
+from Cryptodome.Random import get_random_bytes
+from Cryptodome.Hash import SHA256, SHA512, SHA3_256
+from Cryptodome.Signature import DSS
+from Cryptodome.PublicKey import DSA, RSA
+from Cryptodome.Util.Padding import pad, unpad
+from base64 import b64decode, b64encode
+from time import time_ns
+from AES_CTR import AES_CTR
+from AES_CBC import AES_CBC
+from DSA_ import DSA_
+from Hashing_ import sha_, per_byte_hash
+from RSA_ import RSA_, per_byte_enc, per_byte_dec
+
+
+print()
+print(f"{AES_CTR(16,'package_2',mode=AES.MODE_CTR)}")
+print(f"{AES_CTR(32,'package_2',mode=AES.MODE_CTR)}")
+print(f"{AES_CTR(16,'package_1',mode=AES.MODE_CTR)}")
+print(f"{AES_CTR(32,'package_1',mode=AES.MODE_CTR)}")
+
+print()
+print(f"{AES_CBC(16,'package_1',mode=AES.MODE_CBC)}")
+print(f"{AES_CBC(16,'package_2',mode=AES.MODE_CBC)}")
+print(f"{AES_CBC(32,'package_1',mode=AES.MODE_CBC)}")
+print(f"{AES_CBC(32,'package_2',mode=AES.MODE_CBC)}")
+
+
+print()
+print(f"{sha_('256','package_1')}")
+print(f"{sha_('256','package_2')}")
+print(f"{sha_('512','package_1')}")
+print(f"{sha_('512','package_2')}")
+print(f"{sha_('3-256','package_1')}")
+print(f"{sha_('3-256','package_2')}")
+
+print()
+print(f"{RSA_(2048,'package_1')}")
+print(f"{RSA_(2048,'file_rsa')}")
+print(f"{RSA_(3072,'package_1')}")
+print(f"{RSA_(3072,'file_rsa')}")
+
+
+
+print()
+print(f"{DSA_(2048,'package_1')}")
+print(f"{DSA_(2048,'package_2')}")
+print(f"{DSA_(3072,'package_1')}")
+print(f"{DSA_(3072,'package_2')}")
+
